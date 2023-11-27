@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'yellow': '#FCB72B',
+                        'dark_gray': '#495567',
+                        'mid_gray':'#939CAA',
+                        'light_gray':'#E5ECF4',                        
+
+                    },
+
+                },
+                fontFamily: {
+                    'sans': ['Space Mono']
+                },
+                container: {
+                    center: true,
+                },
+
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="sticky top-0 bg-white">
+        <div class="flex flex-row justify-between items-center font-sans container h-[96px] md:px-[100px] sm:px-[40px] px-[32px]">
+            <img class="sm:hidden flex" src="./images/togler.svg" alt="">
+            <div class="flex flex-row items-center gap-x-[60px]">
+                <a href="http://127.0.0.1:5500/index.html"><img src="./images/scoot_logo.svg" alt=""></a>
+                <ul class="hidden sm:flex flex-row gap-x-[32px] text-mid_gray text-[15px] font-bold leading-[25px] font-sanss">
+                    <a class=" hover:text-yellow" href="http://127.0.0.1:5500/second_page.html"><li>About</li></a>
+                    <a class=" hover:text-yellow" href="http://127.0.0.1:5500/fourth_page.html"><li>Location</li></a>
+                    <a class=" hover:text-yellow" href="http://127.0.0.1:5500/third_page.html"><li>Careers</li></a>
+                </ul>
+            </div>
+            <div class="sm:flex hidden">
+                <button class="text-white py-[14px] px-[39px] bg-yellow hover:bg-white border-[1px] border-yellow hover:text-yellow cursor-pointer">Get Scootin</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- <section class="flex flex-col gap-y-[40px] text-white text-[15px] container bg-[url('./images/hero.jpg')] bg-no-repeat bg-cover py-[150px]">
+            <div>
+                <h1 class="w-[600px] text-[56px] font-bold font-sans leading-[56px] pl-[100px]">Scooter sharing made simple</h1>
+            </div>
+            <div class="flex flex-row items-start gap-x-[50px]">
+                <img class="mt-[20px]" src="./images/path_1.jpg" alt="">
+                <div class="flex flex-col md:items-start gap-y-[54px]">
+                    <p class="xl:w-[355px] text-[16px]">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
+                    <button class="text-white py-[14px] max-w-[180px] px-[39px] bg-yellow hover:bg-white border-[1px] border-yellow hover:text-yellow cursor-pointer">Get Scootin</button>
+                </div>
+                <img class="mt-[20px] lg:flex hidden" src="./images/path_2.png" alt="">
+            </div>
+        </section> -->
+        <section class="xl:px-[100px] lg:px-[70px] md:px-[10px] px-[20px] container py-[160px]">
+            <div class="flex flex-col gap-y-[50px] sm:items-start items-center md:flex-row md:justify-between">
+                <div class="flex md:flex-col sm:flex-row flex-col gap-x-[80px] items-center sm:items-start gap-y-[25px]">
+                    <img src="./images/img1_sec2.svg" alt="">
+                    <div class="flex flex-col items-center sm:items-start gap-y-[25px]">
+                        <h1 class="font-bold font-sanss text-2xl">Locate with app</h1>
+                        <p class="xl:w-[330px] font-sanss lg:w-[280px] md:w-[230px] sm:w-[400px] max-w-[300px] text-mid_gray sm:text-start text-center text-[15px]">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
+                    </div>
+                </div>
+                <div class="flex md:flex-col sm:flex-row flex-col gap-x-[80px] items-center sm:items-start gap-y-[25px]">
+                    <img src="./images/img2_sec2.svg" alt="">
+                    <div class="flex flex-col items-center sm:items-start gap-y-[25px]">
+                        <h1 class="font-bold text-2xl">Pick your scooter</h1>
+                        <p class="xl:w-[330px] lg:w-[280px] md:w-[230px] sm:w-[400px] max-w-[300px] text-mid_gray sm:text-start text-center text-[15px]">We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost.</p>
+                    </div>
+                </div>
+                <div class="flex md:flex-col sm:flex-row flex-col gap-x-[80px] items-center sm:items-start gap-y-[25px]">
+                    <img src="./images/img3_sec2.svg" alt="">
+                    <div class="flex flex-col items-center sm:items-start gap-y-[25px]">
+                        <h1 class="font-bold text-2xl">Enjoy the ridep</h1>
+                        <p class="xl:w-[330px] lg:w-[280px] md:w-[230px] sm:w-[400px] max-w-[300px] text-mid_gray sm:text-start text-center text-[15px]">Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.</p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section class="xl:px-[100px] lg:px-[70px] md:px-[50px] px-[20px] container mb-[130px]">
+            <div class="flex md:flex-row flex-col-reverse gap-y-[56px] md:justify-between items-center">
+                <div class="flex flex-col md:items-start items-center gap-y-[25px]">
+                    <h1 class="xl:w-[445px] lg:w-[400px] md:w-[300px] md:text-start text-center text-dark_gray text-5xl font-bold font-['Space Mono'] leading-[48px]">Easy to use riding telemetry</h1>
+                    <p class="xl:w-[445px] lg:w-[400px] md:w-[300px] md:text-start text-center text-mid_gray text-[15px] font-normal font-['Lexend Deca'] leading-[25px]">The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.</p>
+                    <button class="text-white py-[14px] px-[39px] bg-yellow hover:bg-white border-[1px] border-yellow hover:text-yellow cursor-pointer mt-[15px]">Get Scootin</button>
+
+                </div>
+                <div>
+                    <img class="lg:w-[450px] lg:h-[450px] md:w-[350px] md:h-[350px] rounded-full" src="./images/img_sec3.png" alt="">
+                </div>
+
+            </div>
+        </section>
+        <section class="xl:px-[100px] lg:px-[70px] md:px-[50px] px-[20px] container mb-[130px]">
+            <div class="flex md:flex-row-reverse flex-col-reverse gap-y-[56px] md:justify-between items-center">
+                <div class="flex flex-col md:items-start items-center gap-y-[25px]">
+                    <h1 class="xl:w-[445px] lg:w-[400px] md:w-[300px] md:text-start text-center text-dark_gray text-5xl font-bold font-['Space Mono'] leading-[48px]">Coming to a city near you</h1>
+                    <p class="xl:w-[445px] lg:w-[400px] md:w-[300px] md:text-start text-center text-mid_gray text-[15px] font-normal font-['Lexend Deca'] leading-[25px]">Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.</p>
+                    <button class="text-white py-[14px] px-[39px] bg-yellow hover:bg-white border-[1px] border-yellow hover:text-yellow cursor-pointer mt-[15px]">Get Scootin</button>
+
+                </div>
+                <div>
+                    <img class="lg:w-[450px] lg:h-[450px] md:w-[350px] md:h-[350px] rounded-full" src="./images/img_sec4.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="xl:px-[100px] lg:px-[70px] md:px-[50px] px-[20px] container mb-[130px]">
+            <div class="flex md:flex-row-reverse flex-col gap-y-[56px] md:justify-between items-center">
+                <div>
+                    <img class="lg:w-[450px] lg:h-[450px] md:w-[350px] md:h-[350px] rounded-full" src="./images/img_sec5.png" alt="">
+                </div>
+
+                <div class="flex flex-col md:items-start items-center gap-y-[25px]">
+                    <h1 class="xl:w-[445px] lg:w-[400px] md:w-[300px] md:text-start text-center text-dark_gray text-5xl font-bold font-['Space Mono'] leading-[48px]">Zero hassle payments</h1>
+                    <p class="xl:w-[445px] lg:w-[400px] md:w-[300px] md:text-start text-center text-mid_gray text-[15px] font-normal font-['Lexend Deca'] leading-[25px]">Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.</p>
+                    <button class="text-white py-[14px] px-[39px] bg-yellow hover:bg-white border-[1px] border-yellow hover:text-yellow cursor-pointer mt-[15px]">Get Scootin</button>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="container flex flex-col ">
+        <div class="py-[62px] xl:px-[100px] lg:px-[70px] md:px-[10px] px-[20px] flex-col gap-y-[40px] flex md:flex-row md:justify-between items-center  bg-slate-600">
+            <div>
+                <h1 class="md:text-start text-center max-w-[450px] text-white md:max-w-[400px] lg:w-[500px] xl:w-[600px] text-[56px] font-bold font-sans leading-[56px]">Sign up and Scoot off today</h1>
+            </div>
+            <div class="flex flex-row items-center gap-x-[10px] sm:gap-x-[20px]">
+                
+                <a href="">
+                    <div class="flex flex-row gap-x-[10px] items-center bg-slate-200 rounded py-[8px] px-[15px] cursor-pointer">
+                        <img src="./images/logo_apple.png" alt="">
+                        <div class="flex flex-col">
+                            <span class="text-slate-600 text-[10px] font-bold font-['Space Mono']">Available on the</span>
+                            <p class="text-slate-600 text-[1rem] sm:text-xl font-bold font-['Space Mono'] leading-normal">AppStore</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="flex flex-row gap-x-[10px] items-center bg-slate-200 rounded py-[8px] px-[15px] cursor-pointer">
+                        <img src="./images/logo_chrom.png" alt="">
+                        <div class="flex flex-col">
+                            <span class="text-slate-600 text-[10px] font-bold font-['Space Mono']">Get it on</span>
+                            <p class="text-slate-600 text-[1rem] sm:text-xl font-bold font-['Space Mono'] leading-normal">GooglePlay</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="cursor-pointer xl:px-[100px] lg:px-[70px] md:px-[10px] px-[20px] py-[64px] sm:py-[35px] flex sm:flex-row flex-col gap-y-[40px] justify-between items-center bg-zinc-700">
+            <div class="flex sm:flex-row flex-col gap-y-[40px] items-center gap-x-[60px]">
+                <a href="http://127.0.0.1:5500/index.html"><img src="./images/scoot_white.png" alt=""></a>
+                <ul class="flex sm:flex-row flex-col gap-y-[16px] gap-x-[32px] text-mid_gray text-[15px] font-bold leading-[25px] sm:items-start items-center">
+                    <a class=" hover:text-yellow" href="http://127.0.0.1:5500/second_page.html"><li>About</li></a>
+                    <a class=" hover:text-yellow" href="http://127.0.0.1:5500/fourth_page.html"><li>Location</li></a>
+                    <a class=" hover:text-yellow" href="http://127.0.0.1:5500/third_page.html"><li>Careers</li></a>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <img src="./images/logo_apps.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

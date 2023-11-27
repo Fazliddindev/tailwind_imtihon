@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'yellow': '#FCB72B',
+                        'dark_gray': '#495567',
+                        'mid_gray':'#939CAA',
+                        'light_gray':'#E5ECF4',                        
+
+                    },
+
+                },
+                fontFamily: {
+                    'sans': ['Space Mono']
+                },
+                container: {
+                    center: true,
+                },
+
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="sticky top-0 bg-white">
+        <div class="flex flex-row justify-between items-center font-sans container h-[96px] md:px-[100px] sm:px-[40px] px-[32px]">
+            <img class="sm:hidden flex" src="./images/togler.svg" alt="">
+            <div class="flex flex-row items-center gap-x-[60px]">
+                <a href="http://127.0.0.1:5500/index.html"><img src="./images/scoot_logo.svg" alt=""></a>
+                <ul class="hidden sm:flex flex-row gap-x-[32px] text-mid_gray text-[15px] font-bold leading-[25px]">
+                    <a class=" hover:text-yellow" href="http://127.0.0.1:5500/second_page.html"><li>About</li></a>
+                    <a class=" hover:text-yellow" href="http://127.0.0.1:5500/fourth_page.html"><li>Location</li></a>
+                    <a class=" hover:text-yellow" href="http://127.0.0.1:5500/third_page.html"><li>Careers</li></a>
+                </ul>
+            </div>
+            <div class="sm:flex hidden">
+                <button class="text-white py-[14px] px-[39px] bg-yellow hover:bg-white border-[1px] border-yellow hover:text-yellow cursor-pointer">Get Scootin</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="xl:px-[100px] lg:px-[70px] md:px-[10px] px-[20px] container py-[70px] bg-[url('./images/img__sec_page.png')] bg-no-repeat bg-cover">
+            <h1 class="text-white text-[56px] font-bold font-['Space Mono'] leading-[56px]">About</h1>
+        </section>
+        <section class="xl:px-[100px] lg:px-[70px] md:px-[50px] px-[20px] container py-[130px]">
+            <div class="flex md:flex-row flex-col-reverse gap-y-[56px] md:justify-between items-center">
+                <div class="flex flex-col md:items-start items-center gap-y-[25px]">
+                    <h1 class="xl:w-[445px] lg:w-[400px] md:w-[300px] md:text-start text-center text-dark_gray text-5xl font-bold font-['Space Mono'] leading-[48px]">Mobility for the digital era</h1>
+                    <p class="xl:w-[445px] lg:w-[400px] md:w-[300px] md:text-start text-center text-mid_gray text-[15px] font-normal font-['Lexend Deca'] leading-[25px]">Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips.</p>
+
+                </div>
+                <div>
+                    <img class="lg:w-[450px] lg:h-[450px] md:w-[350px] md:h-[350px] rounded-full" src="./images/img1_pag2.png" alt="">
+                </div>
+
+            </div>
+        </section>
+        <section class="xl:px-[100px] lg:px-[70px] md:px-[50px] px-[20px] container py-[130px]">
+            <div class="flex md:flex-row-reverse flex-col-reverse gap-y-[56px] md:justify-between items-center">
+                <div class="flex flex-col md:items-start items-center gap-y-[25px]">
+                    <h1 class="xl:w-[445px] lg:w-[400px] md:w-[300px] md:text-start text-center text-dark_gray text-5xl font-bold font-['Space Mono'] leading-[48px]">Better urban living</h1>
+                    <p class="xl:w-[445px] lg:w-[400px] md:w-[300px] md:text-start text-center text-mid_gray text-[15px] font-normal font-['Lexend Deca'] leading-[25px]">We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.</p>
+
+                </div>
+                <div>
+                    <img class="lg:w-[450px] lg:h-[450px] md:w-[350px] md:h-[350px] rounded-full" src="./images/sec_pag2.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="xl:px-[100px] lg:px-[70px] md:px-[50px] px-[0px] container py-[130px]">
+            <div class="flex flex-row justify-center items-center">
+                <h1 class="w-[540px] text-center text-slate-600 text-5xl font-bold font-['Space Mono'] leading-[48px] mb-[90px]">Our values</h1>
+            </div>
+            <div class="flex md:flex-row md:items-start flex-col justify-between items-center gap-y-[25px]  flex-wrap">
+                <div class="flex flex-col gap-y-[25px] items-center">
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="md:w-[200px] md:h-[200px] lg:w-[225px] lg:h-[225px] xl:w-[250px] xl:h-[250px] rounded-full" src="./images/img2_pag2.png" alt="">
+                        <div class="position-relative relative bottom-[40px] w-[96px]   bg-yellow  h-[96px] rounded-full flex items-center justify-center">
+                            <img src="./images/01_pag2.png" alt="">
+                        </div>
+                    </div>
+                    <h1 class="w-[350px] text-center text-slate-600 text-2xl font-bold font-['Space Mono'] leading-7">Our tech</h1>
+                    <p class="w-[260px] sm:w-[350px] text-center text-gray-400 text-[15px] font-normal font-['Lexend Deca'] leading-[25px]">We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!</p>
+                </div>
+                <div class="flex flex-col gap-y-[25px] items-center">
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="md:w-[200px] md:h-[200px] lg:w-[225px]lg:h-[225px] xl:w-[250px] xl:h-[250px] rounded-full" src="./images/img3_pag2.png" alt="">
+                        <div class="position-relative relative bottom-[40px] w-[96px]   bg-yellow  h-[96px] rounded-full flex items-center justify-center">
+                            <img src="./images/02_pag2.png" alt="">
+                        </div>
+                    </div>
+                    <h1 class="w-[350px] text-center text-slate-600 text-2xl font-bold font-['Space Mono'] leading-7">Our integrity</h1>
+                    <p class="w-[260px] sm:w-[350px] text-center text-gray-400 text-[15px] font-normal font-['Lexend Deca'] leading-[25px]">We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.</p>
+                </div>
+                <div class="flex flex-col gap-y-[25px] items-center">
+                    <div class="flex flex-col items-center justify-center">
+                        <img class="md:w-[200px] md:h-[200px] lg:w-[225px] lg:h-[225px] xl:w-[250px] xl:h-[250px] rounded-full" src="./images/img4_pag2.png" alt="">
+                        <div class="position-relative relative bottom-[40px] w-[96px]   bg-yellow  h-[96px] rounded-full flex items-center justify-center">
+                            <img src="./images/03_pag2.png" alt="">
+                        </div>
+                    </div>
+                    <h1 class="w-[350px] text-center text-slate-600 text-2xl font-bold font-['Space Mono'] leading-7">Our community</h1>
+                    <p class="w-[260px] sm:w-[350px] text-gray-400 text-center text-[15px] font-normal font-['Lexend Deca'] leading-[25px]">We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.</p>
+                </div>
+            </div>
+        </section>
+        <section class="xl:px-[100px] lg:px-[70px] md:px-[50px] px-[20px] container py-[130px]">
+            <div class="flex flex-row justify-center items-center mb-[65px]">
+                <h1 class="w-[540px] text-center text-slate-600 text-5xl font-bold font-['Space Mono'] leading-[48px]">FAQs</h1>
+            </div>
+            <div class="flex flex-col items-start gap-y-[65px]">
+                <div class="flex md:flex-row flex-col items-center gap-y-[40px] justify-between md:items-start">
+                    <h1 class="w-[350px] text-slate-600 text-[40px] font-bold font-['Space Mono'] leading-[48px]">How it works</h1>
+                    <div class="flex flex-col items-start gap-y-[16px] list-none">
+                        <div class="py-[32px] px-[40px] bg-slate-100 md:w-670px lg:w-[580px] xl:w-[730px]">
+                            <summary>
+                                <h1 class="text-slate-600 text-2xl font-bold font-['Space Mono'] leading-7">How do I download the app?</h1>
+                                <details>
+                                    <p class="md:w-620px lg:w-[530px] xl:w-[680px] text-slate-600 text-[15px] font-normal font-['Lexend Deca'] leading-[25px]">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.</p>
+                                </details>
+                            </summary>
+                        </div>
+                        <div class="py-[32px] px-[40px] bg-slate-100 md:w-670px lg:w-[580px] xl:w-[730px]">
+                            <summary>
+                                <h1 class="text-slate-600 text-2xl font-bold font-['Space Mono'] leading-7">Can I find a nearby Scoots?</h1>
+                                <details>
+                                    <p class="md:w-620px lg:w-[530px] xl:w-[680px] text-slate-600 text-[15px] font-normal font-['Lexend Deca'] leading-[25px]">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.</p>
+                                </details>
+                            </summary>
+                        </div>
+                        <div class="py-[32px] px-[40px] bg-slate-100 md:w-670px lg:w-[580px] xl:w-[730px]">
+                            <summary>
+                                <h1 class="text-slate-600 text-2xl font-bold font-['Space Mono'] leading-7">Do I need a license to ride?</h1>
+                                <details>
+                                    <p class="md:w-620px lg:w-[530px] xl:w-[680px] text-slate-600 text-[15px] font-normal font-['Lexend Deca'] leading-[25px]">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.</p>
+                                </details>
+                            </summary>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col items-center gap-y-[40px] justify-between md:items-start">
+                    <h1 class="w-[350px] text-slate-600 text-[40px] font-bold font-['Space Mono'] leading-[48px]">Safe driving</h1>
+                    <div class="flex flex-col items-start gap-y-[16px] list-none">
+                        <div class="py-[32px] px-[40px] bg-slate-100 md:w-670px lg:w-[580px] xl:w-[730px]">
+                            <summary>
+                                <h1 class="text-slate-600 text-2xl font-bold font-['Space Mono'] leading-7">Should I wear a helmet?</h1>
+                                <details>
+                                    <p class="md:w-620px lg:w-[530px] xl:w-[680px] text-slate-600 text-[15px] font-normal font-['Lexend Deca'] leading-[25px]">Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.</p>
+                                </details>
+                            </summary>
+                        </div>
+                        <div class="py-[32px] px-[40px] bg-slate-100 md:w-670px lg:w-[580px] xl:w-[730px]">
+                            <summary>
+                                <h1 class="text-slate-600 text-2xl font-bold font-['Space Mono'] leading-7">How about the rules & regulations?</h1>
+                                <details>
+                                    <p class="md:w-620px lg:w-[530px] xl:w-[680px] text-slate-600 text-[15px] font-normal font-['Lexend Deca'] leading-[25px]">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.</p>
+                                </details>
+                            </summary>
+                        </div>
+                        <div class="py-[32px] px-[40px] bg-slate-100 md:w-670px lg:w-[580px] xl:w-[730px]">
+                            <summary>
+                                <h1 class="text-slate-600 text-2xl font-bold font-['Space Mono'] leading-7">What if I damage my Scoot?</h1>
+                                <details>
+                                    <p class="md:w-620px lg:w-[530px] xl:w-[680px] text-slate-600 text-[15px] font-normal font-['Lexend Deca'] leading-[25px]">To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.</p>
+                                </details>
+                            </summary>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="container flex flex-col ">
+        <div class="py-[62px] xl:px-[100px] lg:px-[70px] md:px-[10px] px-[20px] flex-col gap-y-[40px] flex md:flex-row md:justify-between items-center  bg-slate-600">
+            <div>
+                <h1 class="md:text-start text-center max-w-[450px] text-white md:max-w-[400px] lg:w-[500px] xl:w-[600px] text-[56px] font-bold font-sans leading-[56px]">Sign up and Scoot off today</h1>
+            </div>
+            <div class="flex flex-row items-center gap-x-[10px] sm:gap-x-[20px]">
+                
+                <a href="">
+                    <div class="flex flex-row gap-x-[10px] items-center bg-slate-200 rounded py-[8px] px-[15px] cursor-pointer">
+                        <img src="./images/logo_apple.png" alt="">
+                        <div class="flex flex-col">
+                            <span class="text-slate-600 text-[10px] font-bold font-['Space Mono']">Available on the</span>
+                            <p class="text-slate-600 text-[1rem] sm:text-xl font-bold font-['Space Mono'] leading-normal">AppStore</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="flex flex-row gap-x-[10px] items-center bg-slate-200 rounded py-[8px] px-[15px] cursor-pointer">
+                        <img src="./images/logo_chrom.png" alt="">
+                        <div class="flex flex-col">
+                            <span class="text-slate-600 text-[10px] font-bold font-['Space Mono']">Get it on</span>
+                            <p class="text-slate-600 text-[1rem] sm:text-xl font-bold font-['Space Mono'] leading-normal">GooglePlay</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="cursor-pointer xl:px-[100px] lg:px-[70px] md:px-[10px] px-[20px] py-[64px] sm:py-[35px] flex sm:flex-row flex-col gap-y-[40px] justify-between items-center bg-zinc-700">
+            <div class="flex sm:flex-row flex-col gap-y-[40px] items-center gap-x-[60px]">
+                <a href="http://127.0.0.1:5500/index.html"><img src="./images/scoot_white.png" alt=""></a>
+                <ul class="flex sm:flex-row flex-col gap-y-[16px] gap-x-[32px] text-mid_gray text-[15px] font-bold leading-[25px] sm:items-start items-center">
+                    <a class=" hover:text-yellow" href="http://127.0.0.1:5500/second_page.html"><li>About</li></a>
+                    <a class=" hover:text-yellow" href="http://127.0.0.1:5500/fourth_page.html"><li>Location</li></a>
+                    <a class=" hover:text-yellow" href="http://127.0.0.1:5500/third_page.html"><li>Careers</li></a>
+                </ul>
+            </div>
+            <div>
+                <img src="./images/logo_apps.png" alt="">
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
